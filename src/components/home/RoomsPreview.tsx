@@ -13,14 +13,15 @@ export function RoomsPreview() {
   const { openBooking } = useBookingModal()
 
   return (
-    <section className="overflow-hidden bg-section-sage py-12 md:py-16">
+    <section className="section-pad overflow-hidden bg-section-sage">
       <div className="container-page">
-        <Reveal className="mb-8 flex flex-col justify-between gap-4 md:mb-10 md:flex-row md:items-end">
+        <Reveal className="mb-10 flex flex-col justify-between gap-4 md:mb-12 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow mb-3">Accommodations</p>
-            <h2 className="max-w-md text-3xl leading-[1.05] md:text-4xl lg:text-5xl">
-              Rooms that invite stillness
-            </h2>
+            <p className="eyebrow mb-4">Accommodations</p>
+            <h2 className="max-w-md text-4xl md:text-5xl">Rooms that invite stillness</h2>
+            <p className="mt-4 max-w-lg text-mute">
+              Choose the pace of your stay — intimate, spacious, or indulgent.
+            </p>
           </div>
           <Link
             to="/rooms"

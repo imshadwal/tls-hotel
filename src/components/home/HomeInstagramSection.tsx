@@ -5,25 +5,25 @@ import { instagramPostUrl, tlsInstagram, tlsInstagramPosts } from '@/content/ins
 
 export function HomeInstagramSection() {
   return (
-    <section className="overflow-hidden bg-paper py-12 md:py-16">
+    <section className="section-pad overflow-hidden bg-section-sage">
       <div className="container-page">
-        <Reveal className="mb-8 flex flex-wrap items-end justify-between gap-4">
+        <Reveal className="mb-10 flex flex-col justify-between gap-6 md:mb-12 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow mb-3">{tlsInstagram.eyebrow}</p>
-            <h2 className="max-w-md text-3xl md:text-4xl lg:text-5xl">Stay moments</h2>
-            <p className="mt-3 text-sm text-mute">
-              {tlsInstagram.handle} · {tlsInstagram.followers} followers
+            <p className="eyebrow mb-4">{tlsInstagram.eyebrow}</p>
+            <h2 className="text-4xl text-night md:text-5xl">Stay moments</h2>
+            <p className="mt-4 max-w-lg text-mute">
+              {tlsInstagram.handle} · {tlsInstagram.followers} followers — tap any frame to open on
+              Instagram.
             </p>
           </div>
           <Button
             href={tlsInstagram.url}
             target="_blank"
             rel="noopener noreferrer"
-            variant="ghost"
-            className="rounded-full"
+            className="rounded-full self-start"
           >
             <FaInstagram aria-hidden="true" />
-            Follow
+            Follow TLS
           </Button>
         </Reveal>
 

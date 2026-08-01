@@ -53,14 +53,14 @@ export function RoomsPage() {
   return (
     <>
       <SeoHead
-        title="Rooms in Varanasi"
-        description="Book Minimalist, Villa, and Club rooms at our hotel in Pandeypur, Varanasi — AC rooms with Wi‑Fi, free parking, and breakfast options."
+        title="Hotel Rooms in Pandeypur, Varanasi"
+        description="Book Minimalist, Villa, and Club rooms at The Lavish Stay — AC hotel rooms in Pandeypur, Varanasi with Wi‑Fi, free parking, and breakfast options."
         path="/rooms"
         image="/images/rooms/club.webp"
       />
       <PageHero
         title="Rooms"
-        subtitle="Choose the pace of your stay — intimate, spacious, or indulgent."
+        subtitle="AC hotel rooms in Pandeypur, Varanasi — choose Minimalist, Villa, or Club for your stay."
         breadcrumbs={[
           { label: 'Home', path: '/' },
           { label: 'Rooms' },
@@ -68,14 +68,14 @@ export function RoomsPage() {
         image="/images/rooms/club.webp"
       />
 
-      <section className="overflow-hidden bg-section-linen py-16 md:py-20">
+      <section className="section-pad overflow-hidden bg-section-linen">
         <div className="container-page">
-          <Reveal className="mb-10 max-w-xl">
+          <Reveal className="mb-10 max-w-2xl">
             <p className="eyebrow mb-4">Accommodations</p>
             <h2 className="text-4xl md:text-5xl">Three ways to rest</h2>
             <p className="mt-5 max-w-[28rem] text-base leading-[1.75] text-mute">
-              Each room is air-conditioned and thoughtfully equipped for a comfortable Varanasi
-              stay.
+              Each room is air-conditioned and thoughtfully equipped for a comfortable stay at our
+              hotel in Varanasi.
             </p>
           </Reveal>
 
@@ -86,7 +86,9 @@ export function RoomsPage() {
                 href={`#room-${room.slug}`}
                 className="bg-paper px-3 py-4 text-center transition-colors hover:bg-fog sm:px-5 sm:py-5"
               >
-                <p className="font-display text-lg text-night sm:text-xl">{room.name.replace(' Room', '')}</p>
+                <p className="font-display text-lg text-night sm:text-xl">
+                  {room.name.replace(' Room', '')}
+                </p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-mute sm:text-[11px]">
                   From {formatPrice(room.price)}
                 </p>
@@ -114,7 +116,7 @@ export function RoomsPage() {
                     >
                       <img
                         src={room.image}
-                        alt={room.name}
+                        alt={`${room.name} at The Lavish Stay hotel in Varanasi`}
                         className="aspect-[5/4] w-full object-cover md:aspect-[16/11]"
                         loading="lazy"
                       />
@@ -123,7 +125,7 @@ export function RoomsPage() {
                       <p className="text-[11px] uppercase tracking-[0.22em] text-brand">
                         0{index + 1}
                       </p>
-                      <h3 className="mt-3 text-3xl md:text-4xl lg:text-5xl">{room.name}</h3>
+                      <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl">{room.name}</h2>
                       <p className="mt-3 font-display text-2xl text-brand md:text-3xl">
                         From {formatPrice(room.price)}
                         <span className="ml-2 text-sm font-sans font-normal uppercase tracking-[0.14em] text-mute">
@@ -133,6 +135,16 @@ export function RoomsPage() {
                       <p className="mt-5 max-w-sm text-base leading-[1.75] text-mute">
                         {room.shortDescription}
                       </p>
+                      <ul className="mt-6 space-y-3">
+                        {room.amenities.slice(0, 3).map((item) => (
+                          <li
+                            key={item}
+                            className="border-l-2 border-brand pl-4 text-sm text-night"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
                       <ul className="mt-6 flex flex-wrap gap-5 text-xs uppercase tracking-[0.14em] text-mute">
                         <li className="inline-flex items-center gap-2">
                           <FaBed className="text-brand" aria-hidden="true" />
@@ -143,9 +155,12 @@ export function RoomsPage() {
                           {room.sizeSqft} sqft
                         </li>
                       </ul>
-                      <div className="mt-8">
+                      <div className="mt-8 flex flex-wrap gap-3">
                         <Button to={`/rooms/${room.slug}`} className="rounded-full">
                           Explore Room
+                        </Button>
+                        <Button onClick={openBooking} variant="ghost" className="rounded-full">
+                          Book
                         </Button>
                       </div>
                     </div>
@@ -157,35 +172,37 @@ export function RoomsPage() {
         </div>
       </section>
 
-      <section id="amenities" className="scroll-mt-24 overflow-hidden bg-section-sage py-16 md:py-20">
+      <section id="amenities" className="section-pad scroll-mt-24 overflow-hidden bg-section-sage">
         <div className="container-page">
-          <Reveal className="mb-10 max-w-xl">
+          <Reveal className="mb-12 max-w-2xl">
             <p className="eyebrow mb-4">Included with your stay</p>
-            <h2 className="text-3xl md:text-4xl">Hotel amenities</h2>
+            <h2 className="text-4xl md:text-5xl">Hotel amenities</h2>
             <p className="mt-4 max-w-md text-base leading-[1.75] text-mute">
-              Everyday comforts that keep arrivals, rest, and mornings effortless.
+              Everyday comforts that keep arrivals, rest, and mornings effortless at our Varanasi
+              hotel.
             </p>
           </Reveal>
 
-          <ul className="divide-y divide-line/80 border-y border-line/80">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {facilities.map((facility, index) => (
-              <Reveal key={facility.title} delay={0.03 * index}>
-                <li className="flex items-start gap-5 py-5 md:items-center md:gap-8 md:py-6">
-                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-paper text-brand">
+              <Reveal key={facility.title} delay={0.04 * index}>
+                <article className="h-full border-t border-line pt-6">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-paper text-brand">
                     <span aria-hidden="true">{facilityIcons[facility.icon]}</span>
                   </span>
-                  <div className="min-w-0 flex-1 md:grid md:grid-cols-12 md:items-center md:gap-6">
-                    <h3 className="text-lg md:col-span-4 md:text-xl">{facility.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-mute md:col-span-8 md:mt-0 md:text-base">
-                      {facility.description}
-                    </p>
-                  </div>
-                </li>
+                  <p className="mt-5 text-[11px] uppercase tracking-[0.2em] text-brand">
+                    0{index + 1}
+                  </p>
+                  <h3 className="mt-2 text-2xl">{facility.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-mute md:text-base">
+                    {facility.description}
+                  </p>
+                </article>
               </Reveal>
             ))}
-          </ul>
+          </div>
 
-          <div className="mt-10">
+          <div className="mt-12">
             <Button onClick={openBooking} className="rounded-full">
               Book your stay
             </Button>
@@ -193,7 +210,7 @@ export function RoomsPage() {
         </div>
       </section>
 
-      <CtaSection title="Find your room" />
+      <CtaSection title="Find your room in Varanasi" />
     </>
   )
 }

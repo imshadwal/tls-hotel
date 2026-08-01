@@ -61,7 +61,7 @@ export function GoogleReviewsSection() {
   const loading = status === 'loading'
 
   return (
-    <section className="overflow-hidden bg-section-olive py-12 md:py-16">
+    <section className="section-pad overflow-hidden bg-section-olive">
       <div className="container-page">
         <Reveal>
           <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between md:gap-8">

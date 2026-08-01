@@ -24,12 +24,6 @@ export type BlogPost = {
   content: string[]
 }
 
-export type Testimonial = {
-  name: string
-  quote: string
-  image?: string
-}
-
 export type Facility = {
   title: string
   description: string

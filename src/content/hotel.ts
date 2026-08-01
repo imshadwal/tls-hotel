@@ -1,4 +1,4 @@
-import type { Facility, Testimonial } from '@/types'
+import type { Facility } from '@/types'
 
 export const aboutIntro = {
   eyebrow: 'Welcome',
@@ -49,41 +49,6 @@ export const stats = [
   { label: 'Years', value: 1, suffix: '+' },
   { label: 'Satisfaction', value: 98, suffix: '%' },
 ]
-
-export const testimonials: Testimonial[] = [
-  {
-    name: 'Muskan Singh',
-    quote:
-      'The area was quiet and relaxing. It’s the perfect place for a getaway. The rooms and staff are excellent. In short, it’s value for money.',
-    image: '/images/testimonials/muskan.jpg',
-  },
-  {
-    name: 'Madhur Kumar',
-    quote:
-      'Great location, friendly and helpful staff, lovely first impression. It was clean and stylish. The room was well equipped and comfortable.',
-    image: '/images/testimonials/madhur.jpg',
-  },
-  {
-    name: 'Astha Vaish',
-    quote:
-      'I booked my room last minute but will never regret this one. The host was very welcoming and polite. Newly constructed — the ambience is top-notch.',
-    image: '/images/testimonials/astha.jpeg',
-  },
-  {
-    name: 'Shadwal Sinha',
-    quote:
-      'Best place to visit. 5/5 for amenities and ambience. Transport is easy and the city’s highlights are not far from the hotel.',
-  },
-]
-
-export const restaurantContent = {
-  title: 'Bella Cucina',
-  eyebrow: 'On-site café',
-  description:
-    'The aesthetic café in Varanasi — pizza, pasta, coffee, and desserts in a calm, beautifully themed space at The Lavish Stay.',
-  image: '/images/dining/DbH3LsJM0so.jpg',
-  body: `Bella Cucina is our on-site café in Pandeypur — known for cozy décor, changing themes, and a menu that travels from creamy pastas and pizzas to specialty coffee and desserts. Whether you start the morning with breakfast or unwind after the ghats, Bella is where the stay finds its flavour.`,
-}
 
 export const nearbyAttractions = [
   {

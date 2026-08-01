@@ -81,12 +81,3 @@ export const bellaInstagramPosts = [
 export function bellaPostUrl(shortcode: string) {
   return `https://www.instagram.com/p/${shortcode}/`
 }
-
-/** @deprecated alias for older imports */
-export const restaurantContent = {
-  title: bellaCucina.name,
-  eyebrow: bellaCucina.eyebrow,
-  description: bellaCucina.description,
-  image: bellaCucina.image,
-  body: bellaCucina.body,
-}

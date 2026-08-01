@@ -207,10 +207,10 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-paper/98 backdrop-blur-md lg:hidden"
+            className="fixed inset-0 z-[45] bg-paper lg:hidden"
           >
             <nav
-              className="flex h-full flex-col justify-center gap-2 overflow-y-auto px-8 py-24"
+              className="flex h-full flex-col justify-start gap-1 overflow-y-auto px-8 pb-10 pt-28"
               aria-label="Mobile"
             >
               {NAV_LINKS.map((link, index) => (
@@ -224,7 +224,7 @@ export function Navbar() {
                     to={link.path}
                     className={({ isActive }) =>
                       twMerge(
-                        'block py-3 font-display text-4xl',
+                        'block py-2.5 font-display text-3xl sm:text-4xl',
                         isActive ? 'text-brand' : 'text-night',
                       )
                     }

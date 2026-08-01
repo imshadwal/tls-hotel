@@ -41,7 +41,7 @@ export const hotelJsonLd = {
   image: `${SITE.url}/images/brand/logo.png`,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'S-8/227-AKHAJURI VARANASI, Khajuri',
+    streetAddress: 'S-8/227-A, Khajuri',
     addressLocality: 'Varanasi',
     addressRegion: 'Uttar Pradesh',
     postalCode: '221002',

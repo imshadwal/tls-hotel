@@ -65,7 +65,7 @@ export const blogPosts: BlogPost[] = [
       'From a calm Pandeypur morning to the glow of Ganga Aarti — a practical day plan for first-time guests…',
     date: '2025-03-12',
     category: 'Travel',
-    image: '/images/gallery/tls/tls-08.jpg',
+    image: '/images/gallery/tls/tls-08.webp',
     content: [
       'First visits to Varanasi can feel overwhelming — temples, ghats, traffic, and timing all compete for attention. This simple day plan starts and ends at The Lavish Stay in Pandeypur, so you move through the city without rushing your rest.',
       'Morning — Begin with breakfast at the hotel, then head toward Assi Ghat for a quieter riverside start. Sunrise light is softer here, and the pace is gentler than the central ghats. Return or continue onward once the city begins to wake.',
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
       'Arriving by train? Here’s a clear route from Varanasi Junction to our Pandeypur hotel — with tips for a smooth check-in…',
     date: '2025-02-28',
     category: 'The Lavish Stay',
-    image: '/images/gallery/tls/tls-04.jpg',
+    image: '/images/gallery/tls/tls-04.webp',
     content: [
       'Many guests arrive at Varanasi Junction (BSB) before continuing to The Lavish Stay. The hotel sits in Pandeypur, roughly 4.5 km from the station — close enough for a short ride, especially after a long journey.',
       'By cab or auto — Prepaid taxis and app cabs are available outside the station. Share “The Lavish Stay, Pandeypur” or our full address with the driver. Travel time is typically 15–25 minutes depending on traffic.',
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
       'Between temple visits and ghat evenings, Bella Cucina offers an easy on-site pause — coffee, comfort plates, and calm seating…',
     date: '2025-01-20',
     category: 'Tourist',
-    image: '/images/dining/bella-food.jpg',
+    image: '/images/dining/bella-food.webp',
     content: [
       'A Varanasi day is often full — walking, waiting, worship, and wonder. Bella Cucina, the on-site café at The Lavish Stay, gives guests a convenient place to reset without leaving the property.',
       'Why guests stop here — It is ideal for a late breakfast, a laptop-friendly afternoon coffee, or a lighter evening meal after returning from the aarti. You stay close to your room while still enjoying a change of atmosphere.',

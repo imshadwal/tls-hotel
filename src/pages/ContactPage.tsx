@@ -10,7 +10,7 @@ export function ContactPage() {
         title="Contact"
         description="Get in touch with The Lavish Stay Hotels in Varanasi for bookings, queries, and assistance."
         path="/contact"
-        image="/images/gallery/tls/tls-05.jpg"
+        image="/images/gallery/tls/tls-05.webp"
       />
       <PageHero
         title="Contact"

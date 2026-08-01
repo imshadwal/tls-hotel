@@ -77,6 +77,10 @@ export function RoomsPreview() {
                 <img
                   src={room.image}
                   alt={room.name}
+                  width={1400}
+                  height={700}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent" />

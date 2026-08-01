@@ -105,16 +105,17 @@ export function HeroBanner() {
         }}
         className="pointer-events-none absolute inset-[-4%]"
       >
-        <motion.img
+        <img
           src="/images/hero/hero-1.webp"
           alt="The Lavish Stay hotel in Varanasi"
+          width={2048}
+          height={1291}
+          decoding="async"
+          fetchPriority="high"
           className={twMerge(
             'h-full w-full object-cover object-[62%_center]',
             !reduceMotion && 'hero-ken-burns',
           )}
-          initial={{ opacity: 0, scale: 1.08 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: reduceMotion ? 0.25 : 1.55, ease }}
         />
       </motion.div>
 

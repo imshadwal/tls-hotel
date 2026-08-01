@@ -18,14 +18,13 @@ function PageHero({
 
   return (
     <section className="relative flex min-h-[48vh] items-end overflow-hidden bg-brand-deep md:min-h-[54vh]">
-      <motion.img
+      <img
         src={image}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.48]"
         aria-hidden="true"
-        initial={reduceMotion ? false : { scale: 1.06, opacity: 0.4 }}
-        animate={{ scale: 1, opacity: 0.48 }}
-        transition={{ duration: reduceMotion ? 0 : 1.1, ease: [0.22, 1, 0.36, 1] }}
+        decoding="async"
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/80 via-brand-deep/50 to-brand-deep/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-brand-deep via-brand-deep/35 to-transparent" />

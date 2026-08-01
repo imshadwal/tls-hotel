@@ -24,10 +24,13 @@ export function AboutPreview() {
           <Reveal className="relative overflow-hidden lg:col-span-7">
             <motion.div style={{ y: imageY }} className="h-full min-h-[300px] sm:min-h-[420px]">
               <img
-                src="/images/about/about-lounge.jpg"
+                src="/images/about/about-lounge.webp"
                 alt="Lounge seating at The Lavish Stay"
+                width={1600}
+                height={1200}
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/55 via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 md:p-7">
@@ -62,10 +65,13 @@ export function AboutPreview() {
             <Reveal delay={0.08} className="w-full shrink-0">
               <div className="relative aspect-[16/9] w-full overflow-hidden sm:aspect-[2.2/1]">
                 <img
-                  src="/images/about/about-cafe.jpg"
+                  src="/images/about/about-cafe.webp"
                   alt="Bella Cucina café food at The Lavish Stay"
+                  width={1400}
+                  height={788}
                   className="h-full w-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-deep/50 to-transparent" />
                 <p className="absolute bottom-4 left-4 text-[11px] uppercase tracking-[0.18em] text-paper">

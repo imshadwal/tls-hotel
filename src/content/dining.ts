@@ -6,9 +6,9 @@ export const bellaCucina = {
   description:
     'The aesthetic café in Varanasi — pizza, pasta, coffee, and desserts in a calm, beautifully themed space at The Lavish Stay.',
   body: `Bella Cucina is our on-site café in Pandeypur — known for cozy décor, changing themes, and a menu that travels from creamy pastas and pizzas to specialty coffee and desserts. Guests love the inviting ambience, books and games for lingering afternoons, and a warmly pet-friendly vibe (hello, Charlie). Whether you start the morning with breakfast or unwind after the ghats, Bella is where the stay finds its flavour.`,
-  image: '/images/dining/bella-food.jpg',
+  image: '/images/dining/bella-food.webp',
   /** Used on Dining page hero / homepage dining preview */
-  heroImage: '/images/dining/bella-facade.jpg',
+  heroImage: '/images/dining/bella-facade.webp',
   phone: '+916394958290',
   phoneDisplay: '+91 63949 58290',
   hours: {

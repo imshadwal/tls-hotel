@@ -52,7 +52,7 @@ export function AboutPage() {
         title="About"
         description="Learn about The Lavish Stay in Pandeypur, Varanasi — modern comfort near Kashi Vishwanath Temple and Varanasi Junction."
         path="/about"
-        image="/images/about/about-lounge.jpg"
+        image="/images/about/about-lounge.webp"
       />
       <PageHero
         title="Our Story"

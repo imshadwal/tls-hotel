@@ -56,7 +56,7 @@ export function RoomsPage() {
         title="Rooms"
         description="Explore Minimalist, Villa, and Club rooms at The Lavish Stay, Varanasi — with parking, Wi‑Fi, breakfast, and more."
         path="/rooms"
-        image="/images/rooms/club.png"
+        image="/images/rooms/club.webp"
       />
       <PageHero
         title="Rooms"
@@ -65,7 +65,7 @@ export function RoomsPage() {
           { label: 'Home', path: '/' },
           { label: 'Rooms' },
         ]}
-        image="/images/rooms/club.png"
+        image="/images/rooms/club.webp"
       />
 
       <section className="overflow-hidden bg-section-linen py-16 md:py-20">

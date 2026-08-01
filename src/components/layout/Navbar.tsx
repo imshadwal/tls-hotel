@@ -75,6 +75,9 @@ export function Navbar() {
             <img
               src="/images/brand/logo.png"
               alt=""
+              width={44}
+              height={44}
+              decoding="async"
               className="h-10 w-10 object-contain md:h-11 md:w-11"
               aria-hidden="true"
             />

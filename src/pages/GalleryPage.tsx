@@ -11,7 +11,7 @@ export function GalleryPage() {
         title="Gallery"
         description="Explore photos of rooms, interiors, and amenities at The Lavish Stay, Varanasi."
         path="/gallery"
-        image="/images/gallery/tls/tls-08.jpg"
+        image="/images/gallery/tls/tls-08.webp"
       />
       <PageHero
         title="Gallery"
@@ -20,7 +20,7 @@ export function GalleryPage() {
           { label: 'Home', path: '/' },
           { label: 'Gallery' },
         ]}
-        image="/images/gallery/tls/tls-08.jpg"
+        image="/images/gallery/tls/tls-08.webp"
       />
       <section className="overflow-hidden bg-section-stone py-20 md:py-28">
         <div className="container-page">

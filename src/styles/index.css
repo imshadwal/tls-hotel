@@ -1,8 +1,30 @@
 @import "tailwindcss";
+@import "@fontsource/gilda-display/400.css";
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/barlow/600.css";
+
+@font-face {
+  font-family: "Gilda Display Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 106%;
+  ascent-override: 92%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Barlow Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Helvetica");
+  size-adjust: 97%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
 
 @theme {
-  --font-display: "Gilda Display", Georgia, serif;
-  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Gilda Display", "Gilda Display Fallback", Georgia, serif;
+  --font-sans: "Barlow", "Barlow Fallback", ui-sans-serif, system-ui, sans-serif;
 
   /* TLS brand identity */
   --color-brand: #576348;
@@ -75,12 +97,22 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    --sticky-booking-offset: 0px;
+  }
+
+  html.sticky-booking-visible {
+    --sticky-booking-offset: 5.75rem;
+  }
+
+  @media (min-width: 768px) {
+    html.sticky-booking-visible {
+      --sticky-booking-offset: 5.5rem;
+    }
   }
 
   body {
     @apply bg-paper font-sans text-night antialiased;
-    padding-bottom: var(--sticky-booking-offset, 0px);
-    transition: padding-bottom 0.3s ease;
+    padding-bottom: var(--sticky-booking-offset);
   }
 
   h1,

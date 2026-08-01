@@ -1,4 +1,5 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { StickyBookingBar } from '@/components/booking/StickyBookingBar'
@@ -17,6 +18,7 @@ export function MainLayout() {
         <StickyBookingBar />
         <BookingModal />
         <ScrollRestoration />
+        <Analytics />
       </div>
     </BookingModalProvider>
   )

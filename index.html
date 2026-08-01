@@ -17,7 +17,6 @@
     />
     <title>The Lavish Stay | TLS Hotels — Varanasi</title>
     <style>
-      /* First paint matches the hero so the footer never flashes as FCP */
       html,
       body,
       #root {
@@ -27,10 +26,71 @@
         margin: 0;
         background: #3f4a34;
       }
+      .boot {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        background: #3f4a34;
+        color: #f7f8f5;
+        font-family: Georgia, 'Times New Roman', serif;
+      }
+      .boot-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+      }
+      .boot-mark {
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 999px;
+        background: #576348;
+        color: #f7f8f5;
+        display: grid;
+        place-items: center;
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+      }
+      .boot-name {
+        margin: 0;
+        font-size: 1.15rem;
+        letter-spacing: 0.04em;
+        font-weight: 400;
+      }
+      .boot-spinner {
+        width: 1.35rem;
+        height: 1.35rem;
+        margin-top: 0.35rem;
+        border-radius: 999px;
+        border: 1.5px solid rgba(247, 248, 245, 0.18);
+        border-top-color: #9aac85;
+        animation: boot-spin 0.75s linear infinite;
+      }
+      @keyframes boot-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-spinner {
+          animation: none;
+          border-top-color: rgba(247, 248, 245, 0.45);
+        }
+      }
     </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot" role="status" aria-live="polite" aria-label="Loading The Lavish Stay">
+        <div class="boot-inner">
+          <div class="boot-mark" aria-hidden="true">TLS</div>
+          <p class="boot-name">The Lavish Stay</p>
+          <div class="boot-spinner" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

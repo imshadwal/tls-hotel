@@ -16,6 +16,18 @@
       type="image/webp"
     />
     <title>The Lavish Stay | TLS Hotels — Varanasi</title>
+    <style>
+      /* First paint matches the hero so the footer never flashes as FCP */
+      html,
+      body,
+      #root {
+        min-height: 100%;
+      }
+      body {
+        margin: 0;
+        background: #3f4a34;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

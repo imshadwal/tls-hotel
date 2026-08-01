@@ -1,11 +1,9 @@
 import { lazy, Suspense, type ReactNode } from 'react'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { MainLayout } from '@/layouts/MainLayout'
+import { HomePage } from '@/pages/HomePage'
 import { RouteErrorPage } from '@/pages/RouteErrorPage'
 
-const HomePage = lazy(() =>
-  import('@/pages/HomePage').then((m) => ({ default: m.HomePage })),
-)
 const AboutPage = lazy(() =>
   import('@/pages/AboutPage').then((m) => ({ default: m.AboutPage })),
 )
@@ -42,9 +40,11 @@ const NotFoundPage = lazy(() =>
 
 function PageLoader() {
   return (
-    <div className="flex min-h-[50vh] items-center justify-center text-[11px] uppercase tracking-[0.22em] text-mute">
-      Loading…
-    </div>
+    <div
+      className="min-h-[100svh] bg-brand-deep"
+      aria-busy="true"
+      aria-label="Loading page"
+    />
   )
 }
 
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     errorElement: <RouteErrorPage />,
     children: [
-      { index: true, element: <Suspend><HomePage /></Suspend>, errorElement: <RouteErrorPage /> },
+      { index: true, element: <HomePage />, errorElement: <RouteErrorPage /> },
       { path: 'about', element: <Suspend><AboutPage /></Suspend>, errorElement: <RouteErrorPage /> },
       { path: 'rooms', element: <Suspend><RoomsPage /></Suspend>, errorElement: <RouteErrorPage /> },
       {

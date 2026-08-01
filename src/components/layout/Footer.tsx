@@ -66,7 +66,17 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
-          <p className="tracking-wide">Pandeypur, Varanasi · Explore · Discover · Live</p>
+          <p>
+            Managed by{' '}
+            <a
+              href="https://github.com/imshadwal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-paper/70 transition-colors hover:text-brand-soft"
+            >
+              @imshadwal
+            </a>
+          </p>
         </div>
       </div>
     </footer>

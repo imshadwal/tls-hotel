@@ -17,7 +17,7 @@ export function buildSeo({
 }: SeoProps = {}) {
   const fullTitle = title
     ? `${title} – ${SITE.name}`
-    : `${SITE.name} | ${SITE.shortName} — Varanasi`
+    : `${SITE.name} | Hotel in Pandeypur, Varanasi`
   const url = `${SITE.url}${path === '/' ? '' : path}`
   const imageUrl = image.startsWith('http') ? image : `${SITE.url}${image}`
 
@@ -34,6 +34,7 @@ export const hotelJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Hotel',
   name: SITE.name,
+  alternateName: SITE.shortName,
   description: SITE.description,
   url: SITE.url,
   telephone: SITE.phone,
@@ -41,7 +42,7 @@ export const hotelJsonLd = {
   image: `${SITE.url}/images/brand/logo.png`,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'S-8/227-A, Khajuri',
+    streetAddress: 'S-8/227-A, Khajuri, Pandeypur',
     addressLocality: 'Varanasi',
     addressRegion: 'Uttar Pradesh',
     postalCode: '221002',
@@ -52,6 +53,20 @@ export const hotelJsonLd = {
     latitude: 25.3484306,
     longitude: 82.9929872,
   },
+  areaServed: {
+    '@type': 'City',
+    name: 'Varanasi',
+  },
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Free parking', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Free WiFi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Air conditioning', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Restaurant', value: true },
+  ],
   sameAs: [SITE.social.facebook, SITE.social.instagram, SITE.social.bellaInstagram],
   priceRange: '₹₹',
+  starRating: {
+    '@type': 'Rating',
+    ratingValue: '4.6',
+  },
 }

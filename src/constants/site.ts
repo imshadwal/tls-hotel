@@ -3,7 +3,7 @@ export const SITE = {
   shortName: 'TLS Hotels',
   tagline: 'Explore! Discover! Live!',
   description:
-    'The Lavish Stay in Varanasi is a modern hotel in Pandeypur offering air-conditioned rooms, free parking, and easy access to Kashi Vishwanath Temple and Varanasi Junction.',
+    'The Lavish Stay is a boutique hotel in Pandeypur, Varanasi with AC rooms, free parking, on-site café Bella Cucina, and easy access to Kashi Vishwanath Temple and Varanasi Junction.',
   url: 'https://tlshotels.com',
   phone: '+919695326669',
   phoneDisplay: '+91 96953 26669',

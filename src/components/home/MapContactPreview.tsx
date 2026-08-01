@@ -9,6 +9,10 @@ export function MapContactPreview() {
         <Reveal className="mb-8 max-w-xl">
           <p className="eyebrow mb-4">Location</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl">Find us in Pandeypur</h2>
+          <p className="mt-5 max-w-[28rem] text-base leading-[1.75] text-mute">
+            The Lavish Stay is a hotel in Khajuri, Pandeypur — Varanasi, with free parking and
+            straightforward access from the junction and airport routes.
+          </p>
         </Reveal>
 
         <div className="relative">

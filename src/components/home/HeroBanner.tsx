@@ -179,8 +179,8 @@ export function HeroBanner() {
             transition={{ duration: 0.85, delay: reduceMotion ? 0 : 0.72, ease }}
             className="mt-8 max-w-[22rem] text-[1rem] leading-[1.85] text-paper/78 md:mt-9 md:max-w-[24rem] md:text-lg md:leading-[1.9]"
           >
-            Where the city’s sacred rhythm softens into quiet rooms, warm light, and unhurried
-            mornings.
+            A boutique hotel in Pandeypur, Varanasi — quiet rooms, warm light, and unhurried
+            mornings near the city’s temples and ghats.
           </motion.p>
 
           <motion.div

@@ -8,7 +8,7 @@ export function ContactPage() {
     <>
       <SeoHead
         title="Contact"
-        description="Get in touch with The Lavish Stay Hotels in Varanasi for bookings, queries, and assistance."
+        description="Contact The Lavish Stay — hotel in Pandeypur, Varanasi. Call, email, or message for bookings, directions, and stay assistance."
         path="/contact"
         image="/images/gallery/tls/tls-05.webp"
       />

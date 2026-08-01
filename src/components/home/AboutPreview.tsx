@@ -25,7 +25,7 @@ export function AboutPreview() {
             <motion.div style={{ y: imageY }} className="h-full min-h-[300px] sm:min-h-[420px]">
               <img
                 src="/images/about/about-lounge.webp"
-                alt="Lounge seating at The Lavish Stay"
+                alt="Lounge seating at The Lavish Stay hotel in Pandeypur, Varanasi"
                 width={1600}
                 height={1200}
                 className="absolute inset-0 h-full w-full object-cover"
@@ -53,9 +53,7 @@ export function AboutPreview() {
                 {aboutIntro.title}
               </h2>
               <p className="mt-4 text-base leading-[1.7] text-mute">{aboutIntro.subtitle}</p>
-              <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-mute/90">
-                {aboutIntro.body}
-              </p>
+              <p className="mt-3 text-sm leading-relaxed text-mute/90">{aboutIntro.body}</p>
               <Button to="/about" variant="ghost" className="mt-7 w-fit rounded-full">
                 Our Story
                 <span aria-hidden="true">→</span>

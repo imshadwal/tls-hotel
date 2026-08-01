@@ -1,16 +1,17 @@
 import type { Facility } from '@/types'
 
 export const aboutIntro = {
-  eyebrow: 'Welcome',
-  title: 'Quiet comfort between the city’s sacred rhythm',
-  subtitle: 'A contemporary stay in Pandeypur, crafted for rest and discovery.',
-  body: `The Lavish Stay in Varanasi is a modern hotel located in Pandeypur, offering air-conditioned rooms and private bathrooms with easy access to key landmarks — Varanasi Junction Railway Station (about 4.5 km) and Kashi Vishwanath Temple (around 5.4 km). Free parking and attentive service make it a calm base for travelers seeking comfort and accessibility.`,
+  eyebrow: 'Hotel in Varanasi',
+  title: 'Quiet comfort in Pandeypur',
+  subtitle:
+    'A boutique hotel in Varanasi for travelers who want calm rooms, free parking, and an easy base near the ghats and temples.',
+  body: `The Lavish Stay is a modern hotel in Pandeypur, Varanasi with air-conditioned rooms, private bathrooms, fibre Wi‑Fi, and free on-site parking. Guests stay about 4.5 km from Varanasi Junction and 5.4 km from Kashi Vishwanath Temple — close enough for darshan and day trips, quiet enough for a restful night. Breakfast and Bella Cucina café on site keep mornings simple.`,
 }
 
 export const aboutPage = {
-  body: `Experience modern comfort in the heart of ancient Varanasi at The Lavish Stay. Nestled in Pandeypur, this contemporary hotel offers a perfect blend of convenience and comfort. Unwind in air-conditioned rooms with private bathrooms, ensuring a relaxing retreat after exploring the city’s spiritual wonders. Just a short journey from iconic landmarks, The Lavish Stay puts you at the center of Varanasi’s rich culture. The famous Kashi Vishwanath Temple is a mere 5.4 km away, while Varanasi Junction Railway Station is approximately 4.5 km from the hotel — making arrivals and departures effortless.`,
+  body: `Looking for a hotel in Varanasi that balances comfort with location? The Lavish Stay in Pandeypur offers contemporary AC rooms, attentive service, and free parking — a practical choice for pilgrims, families, and business travelers. After exploring the city’s sacred ghats and lanes, return to a calm stay with Wi‑Fi, breakfast options, and Bella Cucina café downstairs. Kashi Vishwanath Temple is about 5.4 km away; Varanasi Junction is roughly 4.5 km, so arrivals by train stay straightforward.`,
   since:
-    'Since opening in 2023, The Lavish Stay is known for its outstanding service and comfort, making it a top choice for travelers in Varanasi.',
+    'Open since 2023, The Lavish Stay has become a trusted boutique hotel in Pandeypur for guests who want a quieter stay while exploring Varanasi.',
 }
 
 export const facilities: Facility[] = [

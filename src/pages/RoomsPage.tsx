@@ -53,8 +53,8 @@ export function RoomsPage() {
   return (
     <>
       <SeoHead
-        title="Rooms"
-        description="Explore Minimalist, Villa, and Club rooms at The Lavish Stay, Varanasi — with parking, Wi‑Fi, breakfast, and more."
+        title="Rooms in Varanasi"
+        description="Book Minimalist, Villa, and Club rooms at our hotel in Pandeypur, Varanasi — AC rooms with Wi‑Fi, free parking, and breakfast options."
         path="/rooms"
         image="/images/rooms/club.webp"
       />

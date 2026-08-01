@@ -13,7 +13,10 @@ import { CtaSection } from '@/components/common/CtaSection'
 export function HomePage() {
   return (
     <>
-      <SeoHead path="/" />
+      <SeoHead
+        path="/"
+        description="Boutique hotel in Pandeypur, Varanasi — AC rooms, free parking, Bella Cucina café, and easy access to Kashi Vishwanath Temple and Varanasi Junction. Book The Lavish Stay."
+      />
       <HeroBanner />
       <AboutPreview />
       <RoomsPreview />

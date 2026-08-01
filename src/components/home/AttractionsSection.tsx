@@ -9,12 +9,13 @@ export function AttractionsSection() {
 
       <div className="container-page relative z-10">
         <Reveal className="mb-10 max-w-xl">
-          <p className="eyebrow mb-4">Destination</p>
+          <p className="eyebrow mb-4">Explore Varanasi</p>
           <h2 className="text-4xl leading-[1.05] md:text-5xl lg:text-6xl">
-            Highlights within reach
+            Near our hotel in Pandeypur
           </h2>
           <p className="mt-5 max-w-[28rem] text-base leading-[1.75] text-mute">
-            Temples, ghats, and the railway — a practical map for first-time visitors and pilgrims.
+            Temples, ghats, and Varanasi Junction — handy distances from The Lavish Stay for
+            first-time visitors and pilgrims.
           </p>
         </Reveal>
 

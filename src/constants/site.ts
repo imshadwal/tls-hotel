@@ -9,7 +9,7 @@ export const SITE = {
   phoneDisplay: '+91 96953 26669',
   email: 'tlshotels@gmail.com',
   address:
-    'S-8/227-A, Khajuri, Varanasi, Varanasi-221002, Uttar Pradesh',
+    'S-8/227-A, Khajuri, Pandeypur, Varanasi-221002, Uttar Pradesh',
   mapUrl: 'https://maps.app.goo.gl/9X1NBsXnt5iCkV7RA',
   social: {
     facebook: 'https://www.facebook.com/tlshotels',

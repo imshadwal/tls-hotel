@@ -212,6 +212,25 @@
     will-change: transform;
   }
 
+  @media (max-width: 767px) {
+    .hero-ken-burns,
+    .hero-light-wash,
+    .hero-ambient::before,
+    .hero-ambient::after,
+    .hero-glass-shimmer::after {
+      animation: none !important;
+    }
+
+    .hero-ken-burns {
+      will-change: auto;
+      transform: none;
+    }
+
+    .hero-light-wash {
+      mix-blend-mode: normal;
+    }
+  }
+
   .hero-light-wash {
     background:
       radial-gradient(ellipse 55% 45% at 78% 38%, rgba(154, 172, 133, 0.42), transparent 62%),

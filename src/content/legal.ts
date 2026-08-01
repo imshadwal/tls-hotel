@@ -55,45 +55,46 @@ export const termsSections = [
   {
     title: 'Introduction',
     paragraphs: [
-      'Welcome to The Lavish Stay. By using our website and booking services, you agree to these Terms and Conditions. Please read them carefully.',
+      'Welcome to The Lavish Stay. By browsing our website, making a reservation, or staying at our hotel, you agree to these Terms and Conditions. Please read them carefully before booking.',
     ],
   },
   {
     title: 'Booking and Reservations',
     paragraphs: [
-      'Booking: All bookings must be made through our official website, our third-party booking engine, or by contacting our reservation team directly. A valid payment method may be required to secure your reservation.',
-      'Confirmation: Your booking is confirmed once you receive a confirmation message or email with reservation details.',
-      'Cancellation: Cancellation and modification policies may vary by rate plan and booking channel. Please review the terms shown at the time of booking.',
-      'Payment: Rates are listed in Indian Rupees unless otherwise stated. Applicable taxes and fees may apply.',
+      'Reservations may be made through our official website, our authorised booking engine, or by contacting our reservations team directly. A valid payment method may be required to confirm your booking.',
+      'A reservation is confirmed only when you receive a confirmation message or email with your booking details.',
+      'Cancellation and modification rules may differ by rate plan and booking channel. Please review the policy shown at the time of booking.',
+      'All rates are quoted in Indian Rupees (INR) unless otherwise stated. Applicable taxes and fees may be added as required by law.',
     ],
   },
   {
     title: 'Guest Responsibilities',
     paragraphs: [
-      'Check-In/Check-Out: Standard check-in and check-out times apply. Early check-in and late check-out are subject to availability and may incur additional charges.',
-      'Conduct: Guests are expected to behave respectfully toward staff, other guests, and hotel property.',
-      'Damages: Guests may be held responsible for damage caused to hotel property during their stay.',
+      'Standard check-in and check-out times apply. Early check-in or late check-out is subject to availability and may attract additional charges.',
+      'Guests are expected to treat hotel staff, other guests, and hotel property with respect at all times.',
+      'Guests may be held financially responsible for any damage caused to hotel rooms, furnishings, or common areas during their stay.',
     ],
   },
   {
     title: 'Use of Facilities',
     paragraphs: [
-      'Hotel Amenities: Use of hotel amenities such as the café or shared spaces is subject to availability and house rules.',
-      'Safety: Please follow all posted guidelines and staff instructions while using facilities.',
-      'Third Parties: Services arranged through third parties are subject to those providers’ own terms.',
+      'Use of hotel facilities such as Bella Cucina café, lounge areas, and other shared spaces is subject to availability and the hotel’s operating policies.',
+      'Guests must follow all posted safety notices and instructions from hotel staff while using any facility on the property.',
+      'Services arranged through external providers (for example transfers or tours) are governed by those providers’ own terms and conditions.',
     ],
   },
   {
     title: 'Liability',
     paragraphs: [
-      'Limitation of Liability: The Lavish Stay is not liable for any indirect, incidental, or consequential damages arising from your stay or use of our services.',
-      'Personal Belongings: Guests are responsible for their personal belongings. Please use in-room safes where available and report concerns to the front desk.',
+      'To the fullest extent permitted by law, The Lavish Stay is not liable for indirect, incidental, or consequential loss arising from your stay or use of our website and booking services.',
+      'Guests are responsible for their personal belongings. Please use in-room safes where available and report any concern to the front desk promptly.',
     ],
   },
   {
     title: 'Changes to Terms',
     paragraphs: [
-      'We reserve the right to update these Terms and Conditions at any time. Changes will be posted on our website with a new effective date. Continued use of our services after changes constitutes acceptance of the updated terms.',
+      'We may update these Terms and Conditions from time to time. The revised version will be published on this website with an updated effective date. Continued use of our website or services after changes are posted means you accept the updated terms.',
     ],
   },
 ]
+

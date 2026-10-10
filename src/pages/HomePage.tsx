@@ -1,5 +1,6 @@
 import { SeoHead } from '@/components/common/SeoHead'
 import { HeroBanner } from '@/components/home/HeroBanner'
+import { DevDeepawaliSection } from '@/components/home/DevDeepawaliSection'
 import { AboutPreview } from '@/components/home/AboutPreview'
 import { StayHighlights } from '@/components/home/StayHighlights'
 import { RoomsPreview } from '@/components/home/RoomsPreview'
@@ -18,6 +19,7 @@ export function HomePage() {
         description="Boutique hotel in Pandeypur, Varanasi — AC rooms, free parking, Bella Cucina café, and easy access to Kashi Vishwanath Temple and Varanasi Junction. Book The Lavish Stay."
       />
       <HeroBanner />
+      <DevDeepawaliSection />
       <AboutPreview />
       <StayHighlights />
       <RoomsPreview />

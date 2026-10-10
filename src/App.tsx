@@ -28,6 +28,9 @@ const GalleryPage = lazy(() =>
 const DiningPage = lazy(() =>
   import('@/pages/DiningPage').then((m) => ({ default: m.DiningPage })),
 )
+const DevDeepawaliPage = lazy(() =>
+  import('@/pages/DevDeepawaliPage').then((m) => ({ default: m.DevDeepawaliPage })),
+)
 const PrivacyPage = lazy(() =>
   import('@/pages/LegalPages').then((m) => ({ default: m.PrivacyPage })),
 )
@@ -67,6 +70,15 @@ const router = createBrowserRouter([
         errorElement: <RouteErrorPage />,
       },
       { path: 'dining', element: <Suspend><DiningPage /></Suspend>, errorElement: <RouteErrorPage /> },
+      {
+        path: 'dev-deepawali',
+        element: (
+          <Suspend>
+            <DevDeepawaliPage />
+          </Suspend>
+        ),
+        errorElement: <RouteErrorPage />,
+      },
       { path: 'gallery', element: <Suspend><GalleryPage /></Suspend>, errorElement: <RouteErrorPage /> },
       { path: 'contact', element: <Suspend><ContactPage /></Suspend>, errorElement: <RouteErrorPage /> },
       { path: 'blog', element: <Suspend><BlogPage /></Suspend>, errorElement: <RouteErrorPage /> },

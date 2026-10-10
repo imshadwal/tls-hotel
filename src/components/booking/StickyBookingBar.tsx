@@ -11,8 +11,8 @@ export function StickyBookingBar() {
   const [pastHero, setPastHero] = useState(false)
   const [nearFooter, setNearFooter] = useState(false)
 
-  const onContact = pathname === '/contact'
-  const visible = pastHero && !isOpen && !onContact && !nearFooter
+  const hiddenOnPage = pathname === '/contact' || pathname === '/dev-deepawali'
+  const visible = pastHero && !isOpen && !hiddenOnPage && !nearFooter
 
   useEffect(() => {
     const onScroll = () => setPastHero(window.scrollY > window.innerHeight * 0.65)

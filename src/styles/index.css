@@ -35,6 +35,8 @@
   --color-fog: #eef1ea;
   --color-mute: #6b7265;
   --color-line: #d8ddd2;
+  --color-gilt: #c9a96e;
+  --color-gilt-deep: #8a6a2f;
 
   /* Aliases used across components */
   --color-charcoal: #141714;

@@ -1,6 +1,7 @@
 import { SeoHead } from '@/components/common/SeoHead'
 import { HeroBanner } from '@/components/home/HeroBanner'
 import { DevDeepawaliSection } from '@/components/home/DevDeepawaliSection'
+import { DevDeepawaliFloatingCard } from '@/components/home/DevDeepawaliFloatingCard'
 import { AboutPreview } from '@/components/home/AboutPreview'
 import { StayHighlights } from '@/components/home/StayHighlights'
 import { RoomsPreview } from '@/components/home/RoomsPreview'
@@ -29,6 +30,7 @@ export function HomePage() {
       <AttractionsSection />
       <MapContactPreview />
       <CtaSection title="Stay at TLS. Explore Varanasi." />
+      <DevDeepawaliFloatingCard />
     </>
   )
 }

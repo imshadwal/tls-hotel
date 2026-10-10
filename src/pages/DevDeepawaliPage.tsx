@@ -475,8 +475,8 @@ export function DevDeepawaliPage() {
         image={devDeepawali.image}
       />
       <HeroSection />
-      <ExperienceSection />
       <BoatsSection />
+      <ExperienceSection />
       <CompareSection />
       <GallerySection />
       <HowToBookSection />

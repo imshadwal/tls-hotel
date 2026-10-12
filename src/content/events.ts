@@ -34,7 +34,7 @@ export const boatRide = {
     { label: 'Chet Singh Ghat', value: 'Laser light and sound show' },
     { label: 'Lalita Ghat', value: 'Fireworks opposite the ghat' },
   ],
-  note: 'Ganga Aarti is not included. The full boat amount is due 15 days before the evening.',
+  note: 'Ganga Aarti is not included. Payment: 50% advance to book, and the remaining 50% 3 days before the event.',
 } as const
 
 export type Boat = {
@@ -160,7 +160,7 @@ export const bookingSteps = [
   {
     title: 'Confirm with our team',
     description:
-      'We confirm availability and seats with you. The full boat amount is due 15 days before the evening.',
+      'We confirm availability and seats with you. Pay 50% in advance to book, and the remaining 50% 3 days before the event.',
   },
 ]
 
@@ -191,7 +191,7 @@ export const eventFaqs = [
   {
     question: 'When do I pay, and can I cancel?',
     answer:
-      'The full boat amount is due 15 days before the event; late payment is not accepted. All boat bookings are non-refundable, and changes depend on availability and may cost extra.',
+      '50% in advance to confirm your booking, and the remaining 50% 3 days before the event. All boat bookings are non-refundable, and changes depend on availability and may cost extra.',
   },
   {
     question: 'Are there washrooms on the boat?',
@@ -307,12 +307,15 @@ export const whyChooseUs = {
 
 export const packageTerms: Array<{ title: string; items: string[] }> = [
   {
+    title: 'Payment terms',
+    items: ['50% advance to confirm the booking.', '50% 3 days prior to the event.'],
+  },
+  {
     title: 'Boat booking',
     items: [
       'All boat-tour bookings are non-refundable.',
       'Changes depend on availability and may cost extra.',
       'Last reporting time is 3 PM. A seat is not held after 3 PM.',
-      'The full boat amount is due 15 days before the event. Late payment is not accepted.',
     ],
   },
   {

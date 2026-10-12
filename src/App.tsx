@@ -31,6 +31,12 @@ const DiningPage = lazy(() =>
 const DevDeepawaliPage = lazy(() =>
   import('@/pages/DevDeepawaliPage').then((m) => ({ default: m.DevDeepawaliPage })),
 )
+const StaySailPage = lazy(() =>
+  import('@/pages/StaySailPage').then((m) => ({ default: m.StaySailPage })),
+)
+const StaySailBrochure = lazy(() =>
+  import('@/pages/StaySailBrochure').then((m) => ({ default: m.StaySailBrochure })),
+)
 const PrivacyPage = lazy(() =>
   import('@/pages/LegalPages').then((m) => ({ default: m.PrivacyPage })),
 )
@@ -79,6 +85,11 @@ const router = createBrowserRouter([
         ),
         errorElement: <RouteErrorPage />,
       },
+      {
+        path: 'dev-deepawali/stay-and-sail',
+        element: <Suspend><StaySailPage /></Suspend>,
+        errorElement: <RouteErrorPage />,
+      },
       { path: 'gallery', element: <Suspend><GalleryPage /></Suspend>, errorElement: <RouteErrorPage /> },
       { path: 'contact', element: <Suspend><ContactPage /></Suspend>, errorElement: <RouteErrorPage /> },
       { path: 'blog', element: <Suspend><BlogPage /></Suspend>, errorElement: <RouteErrorPage /> },
@@ -94,6 +105,11 @@ const router = createBrowserRouter([
       { path: 'fitness', element: <Navigate to="/rooms#amenities" replace /> },
       { path: '*', element: <Suspend><NotFoundPage /></Suspend> },
     ],
+  },
+  {
+    path: '/print/dev-deepawali-stay-and-sail',
+    element: <Suspend><StaySailBrochure /></Suspend>,
+    errorElement: <RouteErrorPage />,
   },
 ])
 

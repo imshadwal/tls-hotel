@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
-import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaWhatsapp, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa'
 import { SeoHead } from '@/components/common/SeoHead'
 import { Reveal } from '@/components/common/Reveal'
 import { BoatCard } from '@/components/events/BoatCard'
+import { SectionIntro } from '@/components/events/SectionIntro'
 import { EventGallery } from '@/components/events/EventGallery'
 import { EventFaq } from '@/components/events/EventFaq'
 import { FloatingWhatsApp } from '@/components/events/FloatingWhatsApp'
 import {
+  boatRide,
   boats,
   bookingSteps,
   devDeepawali,
@@ -16,37 +18,10 @@ import {
   eventGallery,
   experienceHighlights,
   formatInr,
+  staySail,
 } from '@/content/events'
 
 const ease = [0.22, 1, 0.36, 1] as const
-
-function SectionIntro({
-  id,
-  eyebrow,
-  title,
-  description,
-  align = 'left',
-}: {
-  id: string
-  eyebrow: string
-  title: string
-  description?: string
-  align?: 'left' | 'center'
-}) {
-  return (
-    <Reveal className={`mb-10 max-w-2xl md:mb-14 ${align === 'center' ? 'mx-auto text-center' : ''}`}>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gilt-deep">
-        {eyebrow}
-      </p>
-      <h2 id={id} className="mt-4 text-4xl leading-[1.1] text-balance text-night md:text-5xl">
-        {title}
-      </h2>
-      {description ? (
-        <p className="mt-5 text-base leading-relaxed text-mute md:text-lg">{description}</p>
-      ) : null}
-    </Reveal>
-  )
-}
 
 function HeroSection() {
   const reduceMotion = useReducedMotion()
@@ -148,7 +123,7 @@ function HeroSection() {
                   <span className="font-display text-2xl text-night">
                     {formatInr(boat.price)}
                     <span className="ml-1 font-sans text-[10px] uppercase tracking-[0.14em] text-mute">
-                      /ride
+                      /{boat.priceUnit}
                     </span>
                   </span>
                 </li>
@@ -156,7 +131,11 @@ function HeroSection() {
             </ul>
             <p className="mt-6 flex items-center gap-2.5 text-sm text-mute">
               <FaMapMarkerAlt className="text-gilt-deep" aria-hidden="true" />
-              Boarding at Rajghat
+              Boarding at {boatRide.boardingPoint} · {boatRide.duration}
+            </p>
+            <p className="mt-2 flex items-center gap-2.5 text-sm text-mute">
+              <FaCalendarAlt className="text-gilt-deep" aria-hidden="true" />
+              {devDeepawali.date}
             </p>
           </div>
         </motion.aside>
@@ -241,13 +220,83 @@ function BoatsSection() {
           id="dd-boats-heading"
           eyebrow="Choose your boat"
           title="Two ways to see Dev Deepawali from the river"
-          description="Both boats board at Rajghat. Tap a booking button and WhatsApp opens with your request ready to send."
+          description={`Shared boats, priced per person. Both board at ${boatRide.boardingPoint} for a ${boatRide.duration} evening on the river — report by 3 PM. Tap a booking button and WhatsApp opens with your request ready to send.`}
         />
         <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {boats.map((boat, index) => (
             <BoatCard key={boat.id} boat={boat} delay={index * 0.08} />
           ))}
         </div>
+        <Reveal>
+          <p className="mt-6 rounded-xl border border-gilt/40 bg-paper px-5 py-4 text-sm text-mute">
+            {boatRide.note}
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  )
+}
+
+function PackagePromoSection() {
+  return (
+    <section aria-labelledby="dd-package-heading" className="section-pad bg-paper">
+      <div className="container-page">
+        <Reveal>
+          <div className="grid overflow-hidden rounded-3xl bg-brand-deep text-paper lg:grid-cols-[1.1fr_1fr]">
+            <div className="p-7 sm:p-10 lg:p-12">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gilt">
+                Full package tour
+              </p>
+              <h2
+                id="dd-package-heading"
+                className="mt-4 text-4xl leading-[1.1] text-balance text-paper md:text-5xl"
+              >
+                {staySail.title}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-paper/80 md:text-lg">
+                {staySail.tagline} 3 nights at The Lavish Stay with breakfast and dinner, plus your
+                seats on the river.
+              </p>
+              <ul className="mt-6 flex flex-wrap gap-2 text-xs">
+                {['3 nights · 4 days', 'Breakfast & dinner', 'From ₹21,000 for two', 'Boat seats from ₹3,000'].map(
+                  (item) => (
+                    <li key={item} className="rounded-full border border-paper/20 px-3.5 py-1.5 text-paper/85">
+                      {item}
+                    </li>
+                  ),
+                )}
+              </ul>
+              <div className="mt-8 flex flex-col gap-3 whitespace-nowrap xl:flex-row">
+                <Link
+                  to={staySail.path}
+                  className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-gilt px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-night transition-colors hover:bg-[#d8bb84]"
+                >
+                  {staySail.linkLabel}
+                  <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+                <a
+                  href={staySail.brochure}
+                  download={staySail.brochureFileName}
+                  className="inline-flex items-center justify-center gap-2.5 rounded-full border border-paper/40 px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-paper transition-colors hover:border-gilt hover:text-gilt"
+                >
+                  Download brochure (PDF)
+                </a>
+              </div>
+            </div>
+            <div className="relative min-h-60 lg:min-h-full">
+              <img
+                src="/images/rooms/villa.webp"
+                alt="A room at The Lavish Stay"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/40 to-transparent" />
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
@@ -259,9 +308,11 @@ function CompareSection() {
 
   const rows: Array<{ label: string; values: string[] }> = [
     { label: 'Boat category', values: boats.map((b) => b.category) },
-    { label: 'Price', values: boats.map((b) => formatInr(b.price)) },
+    { label: 'Price', values: boats.map((b) => `${formatInr(b.price)} per ${b.priceUnit}`) },
     { label: 'Ride type', values: boats.map((b) => b.rideType) },
     { label: 'Boarding point', values: boats.map((b) => b.boardingPoint) },
+    { label: 'Report by', values: boats.map(() => boatRide.reportBy) },
+    ...boatRide.route.map((stop) => ({ label: stop.label, values: boats.map(() => stop.value) })),
     ...(showDuration
       ? [{ label: 'Ride duration', values: boats.map((b) => b.duration ?? 'Ask on WhatsApp') }]
       : []),
@@ -319,12 +370,7 @@ function CompareSection() {
               </tbody>
             </table>
           </div>
-          {!showCapacity || !showDuration ? (
-            <p className="mt-5 text-sm text-mute">
-              Passenger capacity and ride duration are being finalised — our team will share them
-              on WhatsApp when you enquire.
-            </p>
-          ) : null}
+          <p className="mt-5 text-sm text-mute">{boatRide.note}</p>
         </Reveal>
       </div>
     </section>
@@ -476,6 +522,7 @@ export function DevDeepawaliPage() {
       />
       <HeroSection />
       <BoatsSection />
+      <PackagePromoSection />
       <ExperienceSection />
       <CompareSection />
       <GallerySection />

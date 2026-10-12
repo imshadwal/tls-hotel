@@ -37,7 +37,7 @@ export function BoatCard({ boat, delay = 0 }: BoatCardProps) {
             <p className="font-display text-3xl text-gilt-deep">
               {formatInr(boat.price)}
               <span className="ml-1.5 font-sans text-xs uppercase tracking-[0.16em] text-mute">
-                / ride
+                / {boat.priceUnit}
               </span>
             </p>
           </div>

@@ -11,7 +11,7 @@ export function StickyBookingBar() {
   const [pastHero, setPastHero] = useState(false)
   const [nearFooter, setNearFooter] = useState(false)
 
-  const hiddenOnPage = pathname === '/contact' || pathname === '/dev-deepawali'
+  const hiddenOnPage = pathname === '/contact' || pathname.startsWith('/dev-deepawali')
   const visible = pastHero && !isOpen && !hiddenOnPage && !nearFooter
 
   useEffect(() => {
